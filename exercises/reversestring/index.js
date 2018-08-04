@@ -17,7 +17,6 @@ module.exports = reverse;
 //   for (let char of str) {
 //     rev = char + rev;
 //   }
-
 //   return rev;
 // }
 
