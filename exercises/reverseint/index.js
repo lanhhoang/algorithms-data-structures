@@ -15,11 +15,7 @@ function reverseInt(n) {
     .reverse()
     .join('');
 
-  if (n < 0) {
-    return parseInt(rev) * -1;
-  }
-
-  return parseInt(rev);
+  return Math.sign(n) * parseInt(rev);
 }
 
 module.exports = reverseInt;
