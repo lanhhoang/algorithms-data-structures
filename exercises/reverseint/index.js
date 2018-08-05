@@ -9,17 +9,31 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-  const isNegative = n < 0;
+  const rev = n
+    .toString()
+    .split('')
+    .reverse()
+    .join('');
 
-  let divided = isNegative ? -n : n;
-  let rev = 0;
-
-  while (divided !== 0) {
-    rev = rev * 10 + (divided % 10);
-    divided = Math.floor(divided / 10);
+  if (n < 0) {
+    return parseInt(rev) * -1;
   }
 
-  return isNegative ? -rev : rev;
+  return parseInt(rev);
 }
 
 module.exports = reverseInt;
+
+// function reverseInt(n) {
+//   const isNegative = n < 0;
+
+//   let divided = isNegative ? -n : n;
+//   let rev = 0;
+
+//   while (divided !== 0) {
+//     rev = rev * 10 + (divided % 10);
+//     divided = Math.floor(divided / 10);
+//   }
+
+//   return isNegative ? -rev : rev;
+// }
