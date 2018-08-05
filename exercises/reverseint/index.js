@@ -11,3 +11,17 @@
 function reverseInt(n) {}
 
 module.exports = reverseInt;
+
+function reverseInt(n) {
+  let divided = Math.abs(n);
+  let remained = 0;
+  let rev = 0;
+
+  while (divided !== 0) {
+    remained = divided % 10;
+    divided = Math.floor(divided / 10);
+    rev = rev * 10 + remained;
+  }
+
+  return Math.sign(n) * rev;
+}
