@@ -8,20 +8,18 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
-
-module.exports = reverseInt;
-
 function reverseInt(n) {
-  let divided = Math.abs(n);
-  let remained = 0;
+  const isNegative = n < 0;
+
+  let divided = isNegative ? -n : n;
   let rev = 0;
 
   while (divided !== 0) {
-    remained = divided % 10;
+    rev = rev * 10 + (divided % 10);
     divided = Math.floor(divided / 10);
-    rev = rev * 10 + remained;
   }
 
-  return Math.sign(n) * rev;
+  return isNegative ? -rev : rev;
 }
+
+module.exports = reverseInt;
