@@ -10,3 +10,7 @@
 function palindrome(str) {}
 
 module.exports = palindrome;
+
+function palindrome(str) {
+  return str === str.split('').reduce((rev, char) => char + rev, '');
+}
