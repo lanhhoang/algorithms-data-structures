@@ -20,6 +20,26 @@ module.exports = anagrams;
 //     return false;
 //   }
 
+//   const sortedA = modifiedA
+//     .split('')
+//     .sort()
+//     .join('');
+//   const sortedB = modifiedB
+//     .split('')
+//     .sort()
+//     .join('');
+
+//   return sortedA === sortedB;
+// }
+
+// function anagrams(stringA, stringB) {
+//   if (stringA.length === 0 && stringB.length === 0) return true;
+//   const modifiedA = stringA.replace(/[^\w]/g).toLowerCase();
+//   const modifiedB = stringB.replace(/[^\w]/g).toLowerCase();
+//   if (modifiedA.length !== modifiedB.length) {
+//     return false;
+//   }
+
 //   const charsA = {};
 //   const charsB = {};
 //   const arr = [];
