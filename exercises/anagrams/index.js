@@ -13,6 +13,34 @@ function anagrams(stringA, stringB) {}
 module.exports = anagrams;
 
 // function anagrams(stringA, stringB) {
+//   const charsA = buildCharMap(stringA);
+//   const charsB = buildCharMap(stringB);
+
+//   if (Object.keys(charsA).length !== Object.keys(charsB).length) {
+//     return false;
+//   }
+
+//   for (let key in charsA) {
+//     if (charsA[key] !== charsB[key]) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// function buildCharMap(str) {
+//   const charMap = {};
+//   const cleanStr = str.replace(/[^\w]/g);
+
+//   for (let char of cleanStr) {
+//     charMap[char] = charMap[char] + 1 || 1;
+//   }
+
+//   return charMap;
+// }
+
+// function anagrams(stringA, stringB) {
 //   if (stringA.length === 0 && stringB.length === 0) return true;
 //   const modifiedA = stringA.replace(/[^\w]/g).toLowerCase();
 //   const modifiedB = stringB.replace(/[^\w]/g).toLowerCase();
