@@ -20,3 +20,18 @@
 function steps(n) {}
 
 module.exports = steps;
+
+// function steps(n) {
+//   if (n < 2) {
+//     console.log('#');
+//   } else {
+//     for (let i = 1; i <= n; i++) {
+//       str = repeatString('#', i) + repeatString(' ', n - i);
+//       console.log(str);
+//     }
+//   }
+// }
+
+// function repeatString(str, count) {
+//   return new Array(count + 1).join(str);
+// }
