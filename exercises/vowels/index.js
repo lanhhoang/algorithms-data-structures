@@ -12,6 +12,16 @@ function vowels(str) {}
 module.exports = vowels;
 
 // function vowels(str) {
+//   const filteredStr = str.match(/[aeiou]/gi);
+
+//   if (filteredStr) {
+//     return filteredStr.length;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// function vowels(str) {
 //   const vowels = ['a', 'e', 'i', 'o', 'u'];
 //   let count = 0;
 
