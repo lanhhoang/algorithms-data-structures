@@ -17,3 +17,20 @@
 function pyramid(n) {}
 
 module.exports = pyramid;
+
+// function pyramid(n) {
+//   const length = 2 * n - 1;
+//   const midpoint = Math.floor(length / 2);
+
+//   for (let row = 0; row < n; row++) {
+//     let level = '';
+//     for (let column = 0; column < length; column++) {
+//       if (midpoint - row <= column && midpoint + row >= column) {
+//         level += '#';
+//       } else {
+//         level += ' ';
+//       }
+//     }
+//     console.log(level);
+//   }
+// }
