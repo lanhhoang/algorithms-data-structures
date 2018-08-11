@@ -10,3 +10,16 @@
 function vowels(str) {}
 
 module.exports = vowels;
+
+// function vowels(str) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let count = 0;
+
+//   for (let char of str) {
+//     if (vowels.indexOf(char.toLowerCase()) !== -1) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
