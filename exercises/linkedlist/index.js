@@ -99,6 +99,23 @@ class LinkedList {
     //   node = node.next;
     // }
   }
+
+  insertLast(data) {
+    const last = this.getLast();
+
+    if (last) {
+      last.next = new Node(data);
+    } else {
+      this.head = new Node(data);
+    }
+    // const node = new Node(data);
+    // const last = this.getLast();
+    // if (!last) {
+    //   // Empty LinkedList
+    //   this.head = node;
+    // }
+    // last.next = node;
+  }
 }
 
 module.exports = { Node, LinkedList };
