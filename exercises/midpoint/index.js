@@ -15,3 +15,18 @@
 function midpoint(list) {}
 
 module.exports = midpoint;
+
+function midpoint(list) {
+  let slow = list.getFirst();
+  let fast = list.getFirst();
+
+  for (let node of list) {
+    if (!fast.next || !fast.next.next) {
+      return slow;
+    }
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
+}
