@@ -25,6 +25,32 @@ class Node {
   }
 }
 
-class Tree {}
+class Tree {
+  constructor() {
+    this.root = null;
+  }
+
+  traverseBF(func) {
+    const array = [this.root];
+
+    while (array.length) {
+      const node = array.shift(); // Take out first element, array now empty
+
+      array.push(...node.children); // Push all children of node to the end of array
+      func(node);
+    }
+  }
+
+  traverseDF(func) {
+    const array = [this.root];
+
+    while (array.length) {
+      const node = array.shift();
+
+      array.unshift(...node.children); // Push all children of node to the start of array
+      func(node);
+    }
+  }
+}
 
 module.exports = { Tree, Node };
